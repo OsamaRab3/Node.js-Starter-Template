@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-template",
+  "version": "1.0.0",
+  "description": "A minimal and well-structured Node.js project template to speed up development.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
