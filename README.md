@@ -6,7 +6,7 @@ A minimal and well-structured Node.js project template to speed up development.
 
 ```
 Node.js-Starter-Template/
-├── public/                 # Static assets
+|
 ├── README.md               # Project documentation
 └── src/                    # Main application source code
     ├── api/                # API-related files
