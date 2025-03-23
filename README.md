@@ -51,11 +51,20 @@ Node.js-Starter-Template/
 
 If you want to create a new project from this template without cloning the Git history, use `degit`:
 
-```bash
-npx degit OsamaRab3/Node.js-Starter-Template my-new-project
-cd my-new-project ; cd src
-npm install
-```
+- **For JavaScript version**:
+  ```bash
+  npx degit OsamaRab3/Node.js-Starter-Template#master my-new-project
+  cd my-new-project/src
+  npm install
+  ```
+
+- **For TypeScript version**:
+  ```bash
+  npx degit OsamaRab3/Node.js-Starter-Template#ts my-new-project
+  cd my-new-project/src
+  npm install
+  npx ts-node server.ts
+  ```
 
 ## 📌 Features
 
