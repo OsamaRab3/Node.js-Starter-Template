@@ -1,6 +1,7 @@
-# 🚀 Node.js Starter Template
 
-A minimal and well-structured Node.js project template to speed up development.
+# 🚀 Node.js + TypeScript  Template
+
+A minimal and well-structured **Node.js + TypeScript** project template to speed up development.
 
 ## 📁 Folder Structure
 
@@ -12,20 +13,21 @@ Node.js-Starter-Template/
     ├── api/                # API-related files
     │   ├── controllers/    # Controllers (handling requests)
     │   └── routes/         # Route definitions
-    ├── app.js              # Main app entry point
+    ├── app.ts              # Main app entry point (converted to TypeScript)
     ├── config/             # Configuration files
-    │   ├── index.js        # Environment variables and configurations
-    │   └── init.js         # Middleware and error handling setup
+    │   ├── index.ts        # Environment variables and configurations
+    │   └── init.ts         # Middleware and error handling setup
     ├── middleware/         # Middleware functions
     ├── models/             # Database models
     ├── package.json        # Project metadata & dependencies
     ├── package-lock.json   # Lockfile for dependencies
-    ├── server.js           # Server setup
+    ├── tsconfig.json       # TypeScript configuration file
+    ├── server.ts           # Server setup
     ├── services/           # Business logic services
     ├── tests/              # Unit and integration tests
     └── utils/              # Utility functions
-        ├── asyncErrorHandler.js # Async error handling utility
-        └── CustomError.js       # Custom error handling class
+        ├── asyncErrorHandler.ts # Async error handling utility
+        └── CustomError.ts       # Custom error handling class
 ```
 
 ## 🚀 Getting Started
@@ -42,7 +44,12 @@ Node.js-Starter-Template/
    npm install
    ```
 
-3. **Run the application**
+3. **Compile TypeScript**
+   ```bash
+   tsc 
+   ```
+
+4. **Run the application**
    ```bash
    npm start
    ```
@@ -51,16 +58,27 @@ Node.js-Starter-Template/
 
 If you want to create a new project from this template without cloning the Git history, use `degit`:
 
-```bash
-npx degit OsamaRab3/Node.js-Starter-Template my-new-project
-cd my-new-project ; cd src
-npm install
-```
+- **For JavaScript version**:
+  ```bash
+  npx degit OsamaRab3/Node.js-Starter-Template#master my-new-project
+  cd my-new-project/src
+  npm install
+  ```
+
+- **For TypeScript version**:
+  ```bash
+  npx degit OsamaRab3/Node.js-Starter-Template#ts my-new-project
+  cd my-new-project/src
+  npm install
+  npx ts-node server.ts
+  ```
 
 ## 📌 Features
 
 ✅ Predefined project structure  
 ✅ Organized folders for maintainability  
-✅ Ready for Express.js backend development  
+✅ Ready for **Express.js + TypeScript** backend development  
 ✅ Simple and easy-to-use starter template  
 ✅ Built-in error handling and middleware support  
+✅ **TypeScript support for better maintainability**  
+
