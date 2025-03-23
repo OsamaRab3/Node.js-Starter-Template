@@ -3,14 +3,17 @@
 // ______________________________________Osama Rabea Dakrory__________________________________________________
 // ____________________________________________________________________________________________________________
 
-const app = require('./app')
-const http = require('http')
-const config = require('./config/index')
-const server = http.createServer(app)
+import app from "./app";
+import * as http from 'http'
+import config from "./config";
 
 
 
+const server = http.createServer(app);
+const PORT = config.PORT; 
 
-server.listen(config.PORT,()=>{
-    console.log(`Server running on http://localhost:${config.PORT}`);
-});
+
+server.listen(PORT,()=>{
+    console.log("server run on: ",PORT);
+})
+
